@@ -1,0 +1,1207 @@
+wheat_generator:
+  display-name: '#D8A073&lWheat Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: melon_generator
+    upgrade-cost: 500
+  upgrade-requirements: {}
+  item:
+    material: HAY_BLOCK
+    display-name: '#D8A073&lWheat Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#D8A073&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f1'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$500'
+    - '&7'
+    - '#D8A073&lPOSSIBLE DROPS'
+    - '&7⪼ Wheat &7(value: &a$1&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 1
+      commands: []
+      item:
+        material: WHEAT
+        display-name: '&e&lWheat &a(/sell for money)'
+melon_generator:
+  display-name: '#2CD842&lMelon Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: pumpkin_generator
+    upgrade-cost: 1000
+  upgrade-requirements: {}
+  item:
+    material: MELON
+    display-name: '#2CD842&lMelon Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#2CD842&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f2'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$1,000'
+    - '&7'
+    - '#2CD842&lPOSSIBLE DROPS'
+    - '&7⪼ Melon &7(value: &a$2&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 2
+      commands: []
+      item:
+        material: MELON_SLICE
+        display-name: '#2CD842&lMelon &a(/sell for money)'
+pumpkin_generator:
+  display-name: '#FB913B&lPumpkin Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: coal_generator
+    upgrade-cost: 1800
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Farming Level 3 untuk upgrade generator ini!'
+      placeholder: '%auraskills_farming%'
+      value: '3'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Mining Level 3 untuk upgrade generator ini!'
+      placeholder: '%auraskills_mining%'
+      value: '3'
+  item:
+    material: PUMPKIN
+    display-name: '#FB913B&lPumpkin Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#FB913B&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f3'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$1,800'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Farming Level 3'
+    - '&7⪼ Mining Level 3'
+    - '&7'
+    - '#FB913B&lPOSSIBLE DROPS'
+    - '&7⪼ Pumpkin &7(value: &a$3&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 3
+      commands: []
+      item:
+        material: PUMPKIN
+        display-name: '#FB913B&lPumpkin &a(/sell for money)'
+coal_generator:
+  display-name: '#726365&lCoal Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: iron_generator
+    upgrade-cost: 3000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Mining Level 5 untuk upgrade generator ini!'
+      placeholder: '%auraskills_mining%'
+      value: '5'
+  item:
+    material: COAL_BLOCK
+    display-name: '#726365&lCoal Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#726365&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f4'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$3,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Mining Level 5'
+    - '&7'
+    - '#726365&lPOSSIBLE DROPS'
+    - '&7⪼ Coal &7(value: &a$4&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 4
+      commands: []
+      item:
+        material: COAL
+        display-name: '#726365&lCoal &a(/sell for money)'
+iron_generator:
+  display-name: '#FFDFE2&lIron Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: gold_generator
+    upgrade-cost: 5000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Farming Level 5 untuk upgrade generator ini!'
+      placeholder: '%auraskills_farming%'
+      value: '5'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Fighting Level 3 untuk upgrade generator ini!'
+      placeholder: '%auraskills_fighting%'
+      value: '3'
+  item:
+    material: IRON_BLOCK
+    display-name: '#FFDFE2&lIron Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#FFDFE2&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f5'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$5,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Farming Level 5'
+    - '&7⪼ Fighting Level 3'
+    - '&7'
+    - '#FFDFE2&lPOSSIBLE DROPS'
+    - '&7⪼ Iron &7(value: &a$6&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 6
+      commands: []
+      item:
+        material: IRON_INGOT
+        display-name: '#FFDFE2&lIron &a(/sell for money)'
+gold_generator:
+  display-name: '#FBBE06&lGold Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: redstone_generator
+    upgrade-cost: 7500
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Mining Level 7 untuk upgrade generator ini!'
+      placeholder: '%auraskills_mining%'
+      value: '7'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Foraging Level 3 untuk upgrade generator ini!'
+      placeholder: '%auraskills_foraging%'
+      value: '3'
+  item:
+    material: GOLD_BLOCK
+    display-name: '#FBBE06&lGold Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#FBBE06&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f6'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$7,500'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Mining Level 7'
+    - '&7⪼ Foraging Level 3'
+    - '&7'
+    - '#FBBE06&lPOSSIBLE DROPS'
+    - '&7⪼ Gold &7(value: &a$8&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 8
+      commands: []
+      item:
+        material: GOLD_INGOT
+        display-name: '&e&lGold &a(/sell for money)'
+redstone_generator:
+  display-name: '#FB2727&lRedstone Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: lapis_generator
+    upgrade-cost: 11000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Mining Level 9 untuk upgrade generator ini!'
+      placeholder: '%auraskills_mining%'
+      value: '9'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Fishing Level 3 untuk upgrade generator ini!'
+      placeholder: '%auraskills_fishing%'
+      value: '3'
+  item:
+    material: REDSTONE_BLOCK
+    display-name: '#FB2727&lRedstone Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#FB2727&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f7'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$11,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Mining Level 9'
+    - '&7⪼ Fishing Level 3'
+    - '&7'
+    - '#FB2727&lPOSSIBLE DROPS'
+    - '&7⪼ Redstone &7(value: &a$11&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 11
+      commands: []
+      item:
+        material: REDSTONE
+        display-name: '#FB2727&lRedstone &a(/sell for money)'
+lapis_generator:
+  display-name: '#4042FB&lLapis Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: diamond_generator
+    upgrade-cost: 16000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Foraging Level 5 untuk upgrade generator ini!'
+      placeholder: '%auraskills_foraging%'
+      value: '5'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Farming Level 7 untuk upgrade generator ini!'
+      placeholder: '%auraskills_farming%'
+      value: '7'
+  item:
+    material: LAPIS_BLOCK
+    display-name: '#4042FB&lLapis Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#4042FB&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f8'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$16,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Foraging Level 5'
+    - '&7⪼ Farming Level 7'
+    - '&7'
+    - '#4042FB&lPOSSIBLE DROPS'
+    - '&7⪼ Lapis &7(value: &a$15&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 15
+      commands: []
+      item:
+        material: LAPIS_LAZULI
+        display-name: '#4042FB&lLapis &a(/sell for money)'
+diamond_generator:
+  display-name: '#4FF6FB&lDiamond Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: emerald_generator
+    upgrade-cost: 23000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Mining Level 12 untuk upgrade generator ini!'
+      placeholder: '%auraskills_mining%'
+      value: '12'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Fighting Level 5 untuk upgrade generator ini!'
+      placeholder: '%auraskills_fighting%'
+      value: '5'
+  item:
+    material: DIAMOND_BLOCK
+    display-name: '#4FF6FB&lDiamond Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#4FF6FB&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f9'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$23,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Mining Level 12'
+    - '&7⪼ Fighting Level 5'
+    - '&7'
+    - '#4FF6FB&lPOSSIBLE DROPS'
+    - '&7⪼ Diamond &7(value: &a$20&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 20
+      commands: []
+      item:
+        material: DIAMOND
+        display-name: '#4FF6FB&lDiamond &a(/sell for money)'
+emerald_generator:
+  display-name: '#74FB3D&lEmerald Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: quartz_generator
+    upgrade-cost: 32000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Fishing Level 7 untuk upgrade generator ini!'
+      placeholder: '%auraskills_fishing%'
+      value: '7'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Farming Level 10 untuk upgrade generator ini!'
+      placeholder: '%auraskills_farming%'
+      value: '10'
+  item:
+    material: EMERALD_BLOCK
+    display-name: '#74FB3D&lEmerald Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#74FB3D&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f10'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$32,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Fishing Level 7'
+    - '&7⪼ Farming Level 10'
+    - '&7'
+    - '#74FB3D&lPOSSIBLE DROPS'
+    - '&7⪼ Emerald &7(value: &a$26&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 26
+      commands: []
+      item:
+        material: EMERALD
+        display-name: '#74FB3D&lEmerald &a(/sell for money)'
+quartz_generator:
+  display-name: '#F7FBB1&lQuartz Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: gold_nugget_generator
+    upgrade-cost: 45000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Mining Level 15 untuk upgrade generator ini!'
+      placeholder: '%auraskills_mining%'
+      value: '15'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Foraging Level 8 untuk upgrade generator ini!'
+      placeholder: '%auraskills_foraging%'
+      value: '8'
+  item:
+    material: QUARTZ_BLOCK
+    display-name: '#F7FBB1&lQuartz Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#F7FBB1&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f11'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$45,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Mining Level 15'
+    - '&7⪼ Foraging Level 8'
+    - '&7'
+    - '#F7FBB1&lPOSSIBLE DROPS'
+    - '&7⪼ Quartz &7(value: &a$34&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 34
+      commands: []
+      item:
+        material: QUARTZ
+        display-name: '#F7FBB1&lQuartz &a(/sell for money)'
+gold_nugget_generator:
+  display-name: '#FBC379&lGold Nugget Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: sea_lantern_generator
+    upgrade-cost: 60000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Fishing Level 10 untuk upgrade generator ini!'
+      placeholder: '%auraskills_fishing%'
+      value: '10'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Mining Level 18 untuk upgrade generator ini!'
+      placeholder: '%auraskills_mining%'
+      value: '18'
+  item:
+    material: NETHER_GOLD_ORE
+    display-name: '#FBC379&lGold Nugget Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#FBC379&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f12'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$60,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Fishing Level 10'
+    - '&7⪼ Mining Level 18'
+    - '&7'
+    - '#FBC379&lPOSSIBLE DROPS'
+    - '&7⪼ Gold Nugget &7(value: &a$44&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 44
+      commands: []
+      item:
+        material: GOLD_NUGGET
+        display-name: '#FBC379&lGold Nugget &a(/sell for money)'
+sea_lantern_generator:
+  display-name: '#9DF6FF&lSea Lantern Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: magma_generator
+    upgrade-cost: 80000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Foraging Level 12 untuk upgrade generator ini!'
+      placeholder: '%auraskills_foraging%'
+      value: '12'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Fighting Level 8 untuk upgrade generator ini!'
+      placeholder: '%auraskills_fighting%'
+      value: '8'
+  item:
+    material: SEA_LANTERN
+    display-name: '#9DF6FF&lSea Lantern Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#9DF6FF&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f13'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$80,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Foraging Level 12'
+    - '&7⪼ Fighting Level 8'
+    - '&7'
+    - '#9DF6FF&lPOSSIBLE DROPS'
+    - '&7⪼ Sea Lantern &7(value: &a$56&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 56
+      commands: []
+      item:
+        material: PRISMARINE_CRYSTALS
+        display-name: '#9DF6FF&lSea Lantern &a(/sell for money)'
+magma_generator:
+  display-name: '#FF4D0B&lMagma Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: glowstone_generator
+    upgrade-cost: 105000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Mining Level 21 untuk upgrade generator ini!'
+      placeholder: '%auraskills_mining%'
+      value: '21'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Farming Level 15 untuk upgrade generator ini!'
+      placeholder: '%auraskills_farming%'
+      value: '15'
+  item:
+    material: MAGMA_BLOCK
+    display-name: '#FF4D0B&lMagma Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#FF4D0B&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f14'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$105,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Mining Level 21'
+    - '&7⪼ Farming Level 15'
+    - '&7'
+    - '#FF4D0B&lPOSSIBLE DROPS'
+    - '&7⪼ Magma &7(value: &a$70&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 70
+      commands: []
+      item:
+        material: MAGMA_CREAM
+        display-name: '#FF4D0B&lMagma &a(/sell for money)'
+glowstone_generator:
+  display-name: '#FBC831&lGlowstone Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: tube_coral_generator
+    upgrade-cost: 140000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Fishing Level 15 untuk upgrade generator ini!'
+      placeholder: '%auraskills_fishing%'
+      value: '15'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Foraging Level 15 untuk upgrade generator ini!'
+      placeholder: '%auraskills_foraging%'
+      value: '15'
+  item:
+    material: GLOWSTONE
+    display-name: '#FBC831&lGlowstone Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#FBC831&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f15'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$140,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Fishing Level 15'
+    - '&7⪼ Foraging Level 15'
+    - '&7'
+    - '#FBC831&lPOSSIBLE DROPS'
+    - '&7⪼ Glowstone &7(value: &a$88&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 88
+      commands: []
+      item:
+        material: GLOWSTONE_DUST
+        display-name: '#FBC831&lGlowstone &a(/sell for money)'
+tube_coral_generator:
+  display-name: '#2568FF&lTube Coral Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: brain_coral_generator
+    upgrade-cost: 185000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Mining Level 24 untuk upgrade generator ini!'
+      placeholder: '%auraskills_mining%'
+      value: '24'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Fighting Level 12 untuk upgrade generator ini!'
+      placeholder: '%auraskills_fighting%'
+      value: '12'
+  item:
+    material: TUBE_CORAL_BLOCK
+    display-name: '#2568FF&lTube Coral Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#2568FF&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f16'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$185,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Mining Level 24'
+    - '&7⪼ Fighting Level 12'
+    - '&7'
+    - '#2568FF&lPOSSIBLE DROPS'
+    - '&7⪼ Tube Coral &7(value: &a$110&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 110
+      commands: []
+      item:
+        material: TUBE_CORAL_FAN
+        display-name: '#2568FF&lTube Coral &a(/sell for money)'
+brain_coral_generator:
+  display-name: '#FB45F9&lBrain Coral Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: bubble_coral_generator
+    upgrade-cost: 240000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Farming Level 20 untuk upgrade generator ini!'
+      placeholder: '%auraskills_farming%'
+      value: '20'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Foraging Level 18 untuk upgrade generator ini!'
+      placeholder: '%auraskills_foraging%'
+      value: '18'
+  item:
+    material: BRAIN_CORAL_BLOCK
+    display-name: '#FB45F9&lBrain Coral Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#FB45F9&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f17'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$240,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Farming Level 20'
+    - '&7⪼ Foraging Level 18'
+    - '&7'
+    - '#FB45F9&lPOSSIBLE DROPS'
+    - '&7⪼ Brain Coral &7(value: &a$135&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 135
+      commands: []
+      item:
+        material: BRAIN_CORAL_FAN
+        display-name: '#FB45F9&lBrain Coral &a(/sell for money)'
+bubble_coral_generator:
+  display-name: '#A82AFF&lBubble Coral Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: fire_coral_generator
+    upgrade-cost: 310000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Fishing Level 20 untuk upgrade generator ini!'
+      placeholder: '%auraskills_fishing%'
+      value: '20'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Mining Level 27 untuk upgrade generator ini!'
+      placeholder: '%auraskills_mining%'
+      value: '27'
+  item:
+    material: BUBBLE_CORAL_BLOCK
+    display-name: '#A82AFF&lBubble Coral Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#A82AFF&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f18'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$310,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Fishing Level 20'
+    - '&7⪼ Mining Level 27'
+    - '&7'
+    - '#A82AFF&lPOSSIBLE DROPS'
+    - '&7⪼ Bubble Coral &7(value: &a$165&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 165
+      commands: []
+      item:
+        material: BUBBLE_CORAL_FAN
+        display-name: '#A82AFF&lBubble Coral &a(/sell for money)'
+fire_coral_generator:
+  display-name: '#FB4242&lFire Coral Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: horn_coral_generator
+    upgrade-cost: 400000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Fighting Level 15 untuk upgrade generator ini!'
+      placeholder: '%auraskills_fighting%'
+      value: '15'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Foraging Level 22 untuk upgrade generator ini!'
+      placeholder: '%auraskills_foraging%'
+      value: '22'
+  item:
+    material: FIRE_CORAL_BLOCK
+    display-name: '#FB4242&lFire Coral Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#FB4242&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f19'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$400,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Fighting Level 15'
+    - '&7⪼ Foraging Level 22'
+    - '&7'
+    - '#FB4242&lPOSSIBLE DROPS'
+    - '&7⪼ Fire Coral &7(value: &a$200&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 200
+      commands: []
+      item:
+        material: FIRE_CORAL_FAN
+        display-name: '#FB4242&lFire Coral &a(/sell for money)'
+horn_coral_generator:
+  display-name: '#FBF945&lHorn Coral Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: slime_generator
+    upgrade-cost: 520000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Mining Level 30 untuk upgrade generator ini!'
+      placeholder: '%auraskills_mining%'
+      value: '30'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Farming Level 25 untuk upgrade generator ini!'
+      placeholder: '%auraskills_farming%'
+      value: '25'
+  item:
+    material: HORN_CORAL_BLOCK
+    display-name: '#FBF945&lHorn Coral Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#FBF945&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f20'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$520,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Mining Level 30'
+    - '&7⪼ Farming Level 25'
+    - '&7'
+    - '#FBF945&lPOSSIBLE DROPS'
+    - '&7⪼ Horn Coral &7(value: &a$240&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 240
+      commands: []
+      item:
+        material: HORN_CORAL_FAN
+        display-name: '#FBF945&lHorn Coral &a(/sell for money)'
+slime_generator:
+  display-name: '#ACFB74&lSlime Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: honey_generator
+    upgrade-cost: 680000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Fishing Level 25 untuk upgrade generator ini!'
+      placeholder: '%auraskills_fishing%'
+      value: '25'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Fighting Level 18 untuk upgrade generator ini!'
+      placeholder: '%auraskills_fighting%'
+      value: '18'
+  item:
+    material: SLIME_BLOCK
+    display-name: '#ACFB74&lSlime Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#ACFB74&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f21'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$680,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Fishing Level 25'
+    - '&7⪼ Fighting Level 18'
+    - '&7'
+    - '#ACFB74&lPOSSIBLE DROPS'
+    - '&7⪼ Slime &7(value: &a$285&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 285
+      commands: []
+      item:
+        material: SLIME_BALL
+        display-name: '#ACFB74&lSlime &a(/sell for money)'
+honey_generator:
+  display-name: '#FFC61B&lHoney Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: netherite_generator
+    upgrade-cost: 900000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Foraging Level 28 untuk upgrade generator ini!'
+      placeholder: '%auraskills_foraging%'
+      value: '28'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Mining Level 33 untuk upgrade generator ini!'
+      placeholder: '%auraskills_mining%'
+      value: '33'
+  item:
+    material: HONEY_BLOCK
+    display-name: '#FFC61B&lHoney Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#FFC61B&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f22'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$900,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Foraging Level 28'
+    - '&7⪼ Mining Level 33'
+    - '&7'
+    - '#FFC61B&lPOSSIBLE DROPS'
+    - '&7⪼ Honey &7(value: &a$335&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 335
+      commands: []
+      item:
+        material: HONEY_BOTTLE
+        display-name: '#FFC61B&lHoney &a(/sell for money)'
+netherite_generator:
+  display-name: '#B77F44&lNethrite Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: anchor_generator
+    upgrade-cost: 1200000
+  upgrade-requirements:
+    '0':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Fishing Level 30 untuk upgrade generator ini!'
+      placeholder: '%auraskills_fishing%'
+      value: '30'
+    '1':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Farming Level 30 untuk upgrade generator ini!'
+      placeholder: '%auraskills_farming%'
+      value: '30'
+    '2':
+      type: PLACEHOLDER
+      message: '&8[&6⚡&8] &d⪼ &cButuh Mining Level 35 untuk upgrade generator ini!'
+      placeholder: '%auraskills_mining%'
+      value: '35'
+  item:
+    material: NETHERITE_BLOCK
+    display-name: '#B77F44&lNethrite Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#B77F44&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f23'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&a⪼ Upgrade Cost: &f$1,200,000'
+    - '&7'
+    - '&e&lREQUIRED SKILLS'
+    - '&7⪼ Fishing Level 30'
+    - '&7⪼ Farming Level 30'
+    - '&7⪼ Mining Level 35'
+    - '&7'
+    - '#B77F44&lPOSSIBLE DROPS'
+    - '&7⪼ Netherite &7(value: &a$390&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 390
+      commands: []
+      item:
+        material: NETHERITE_INGOT
+        display-name: '#B77F44&lNetherite &a(/sell for money)'
+anchor_generator:
+  display-name: '#742CFB&lAnchor Generator'
+  interval: 10
+  corrupted:
+    enabled: false
+    cost: 0
+    chance: 0
+  upgrade:
+    next-generator: null
+    upgrade-cost: 0
+  upgrade-requirements: {}
+  item:
+    material: RESPAWN_ANCHOR
+    display-name: '#742CFB&lAnchor Generator'
+    enchantments: []
+    flags: []
+    custom-model-data: 0
+    lore:
+    - '&7Purchasable Generator'
+    - '&7'
+    - '#742CFB&lINFO'
+    - '&7⪼ Time: &f10 seconds'
+    - '&7⪼ Generator Tier: &f24'
+    - '&7⪼ Corruption: &cDisabled'
+    - '&6&lMAX TIER'
+    - '&7'
+    - '#742CFB&lPOSSIBLE DROPS'
+    - '&7⪼ Wither Rose &7(value: &a$450&7)'
+    - '&7'
+    - '&7&oPlace down to activate the generator'
+  drops:
+    '0':
+      chance: 80
+      sell-value: 450
+      commands: []
+      item:
+        material: WITHER_ROSE
+        display-name: '#742CFB&lWither Rose &a(/sell for money)'
+data: []
